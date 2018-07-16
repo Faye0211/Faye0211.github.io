@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工作时间轴</title>
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.eeyellow.Timeline.css" />
+    <style>
+       body{
+            background: url('./img/6.jpg') 100% 100%;
+        }
+        p{
+            font-size: 16px;
+        }
+        a{
+            color: pink;
+            text-decoration: none;
+            margin-left: 100px;
+            font-size: 12px;
+        }
+        a:hover{
+            text-decoration: none;
+            color: skyblue;
+            
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="VivaTimeline">
+                    <dl>
+                        <dt>August 2018</dt>
+                        <dd class="pos-left clearfix">
+                            <div class="circ"></div>
+                            <div class="time">March</div>
+                            
+                            <div class="events" style="background-color: #fff">
+                                <div class="events-header" style="color: #999;font-size: 20px ;">长沙绿色生鲜</div>
+                                <div class="events-body" style="background-color: #fff">
+                                    <div class="row">
+                                        <div class="col-md-6 pull-left">
+                                            <img class="events-object img-responsive img-rounded" src="images/01.jpg" />
+                                        </div>
+                                        <div class="events-desc">
+                                                <h3>项目描述：</h3>
+                                                <p>电商购物类小程序，根据微信小程序官方文档，利用原生微信小程序和wepy开发框架来搭建项目，主要实现的是用户登录，首页渲染，商品分类，搜索，购物车结算，支付等功能。</p>
+                                                
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 pull-left">
+                                            <img class="events-object img-responsive img-rounded" src="images/01-2.jpg" />
+                                        </div>
+                                        <div class="events-desc">
+                                            <h3>职责描述：</h3>
+                                            <p>1、根据后台接口文档发送请求实现页面的渲染</p> 
+                                            <p>  2、实现页面的搜索功能，根据本地存储来实现历史搜索记录功能</p>
+                                            <p> 3、渲染商品详情页、添加到购物车功能、实现购物车结算功能、实现微信支付功能</p>      
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 pull-left">
+                                            <img class="events-object img-responsive img-rounded" src="images/01-4.jpg" />
+                                        </div>
+                                        <div class="events-desc">
+                                              <h3>完成情况：</h3> 
+                                              <p>微信小程序的写法比较特殊，需要对文档有一定的阅读理解能力，在写小程序的时候，基本功能都能实现，但也踩过许多的坑，小程序原生没有提供 tab组件，官方有退出weui提供了tab，底部的高亮小块，使用定位，进行的移动，自己用伪元素实现过。wepy这个框架在测试时踩雷，异步中没有写 this.$apply()，也能够更新，没有这行代码，小程序发布之后，出现了点击两次才会更新的情况，寻找问题的源头花了很长的时间，目前小程序已成功上线。</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="events-footer">
+                                    123
+                                </div>
+                            </div>
+                        </dd>
+                        <dt>June 2017</dt>
+                        <dd class="pos-right clearfix">
+                            <div class="circ"></div>
+                            <div class="time">Feb 21</div>
+                            <div class="events"style="background-color: #fff">
+                                <div class="events-header" style="color: #999;font-size: 20px">广东坚朗五金制品股份有限公司<a href="http://www.kinlong.com/Index.html">☞点我啊~跳给你看咯~</a></div>
+                                <div class="events-body" style="background-color: #fff">
+                                    <div class="row">
+                                        <div class="col-md-6 pull-left">
+                                            <img class="events-object img-responsive img-rounded" src="images/02.jpg" />
+                                        </div>
+                                        <div class="events-desc">
+                                            <h3>项目描述：</h3>
+                                            <p>公司为国内第一家五金制品上市公司，对于官网的更新要求比较多，各种展览会都需要及时更新官网，采用的是JavaScript框架，功能不多，但是页面设计较多且繁琐</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 pull-left">
+                                            <img class="events-object img-responsive img-rounded" src="images/02-2.jpg" />
+                                        </div>
+                                        <div class="events-desc">
+                                            <h3>职责描述：</h3>
+                                            <p>1、负责公司项目的PC端布局，以及移动端的自适应布局页面</p>
+                                            <p>2、将设计图转化为静态页面，并使用前端技术框架和JS等互动效果开发；</p>
+                                            <p>3、与后台开发工程师协作，完成前端数据绑定，操作交互；</p>
+                                            <p>4、解决主流浏览器兼容性问题，并根据需要不断修改完善代码功能；</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 pull-left">
+                                            <img class="events-object img-responsive img-rounded" src="images/02-3.jpg" />
+                                        </div>
+                                        <div class="events-desc">
+                                           <h3>完成情况:</h3>
+                                           <p>在做主流浏览器兼容问题的时候遇见过比较多的问题，后台接口文档复杂，页面结构嵌套过多，能基本在规定时间完成页面的更新。以及适配全移动机型，让网页具有良好的兼容性，扩展性，移动端的自适应页面是需要另外写一套页面来实现兼容的效果。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="events-footer">
+
+                                </div>
+                            </div>
+                        </dd>
+                        <dd class="pos-left clearfix">
+                                <div class="circ"></div>
+                                <div class="time">June 1</div>
+                                <div class="events" style="background-color: #fff">
+                                    <div class="events-header" style="color: #999;font-size: 20px">湖南搜农电子商务公司<a href="http://www.so50.com/">☞点我啊~我真的会跳哦~</a></div>
+                                    <div class="events-body" style="background-color: #fff">
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="images/03.jpg" />
+                                            </div>
+                                            <div class="events-desc">
+                                                <h3>项目描述：</h3>
+                                                <p>湖南农产品电商购物网站，pc端的页面和移动APP页面的布局与架构</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="images/03-2.jpg" />
+                                            </div>
+                                            <div class="events-desc">
+                                                <h3>职责描述：</h3>
+                                                <p>1、前期负责的是pc端页面的渲染，主要是产品分类页面和首页的布局，使用Jquery实现页面的业务逻辑和Dom操作，使用arttemplate模板引擎对页面进行渲染通过jquery-lazyload插件实现图片延迟加载；使用Ajax实现页面的异步加载，优化用户体验；</p>
+                                                <p>2、后期是移动APP的页面渲染，负责发现和分类模块的页面布局和功能实现，使用vue.Js实现页面的业务逻辑；据采用百分比加flex布局方式，设置不同屏幕上的视觉使用体验；使用Ajax实现页面的异步加载，优化用户体验；</p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="images/03-3.jpg" />
+                                            </div>
+                                            <div class="events-desc">
+                                               <h3>完成情况:</h3>
+                                               <p>刚开始做实习生的时候，对页面布局比较熟悉，但是使用js和ajax来实现页面功能的时候不太熟练，经常数据渲染不出来，对于插件的使用也不是很熟悉，需要花时间研究插件的使用，页面负责的只有部分功能，但上线后问题比较少。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="events-footer">
+                                            123
+                                        </div>
+                                </div>
+                            </dd>
+                        
+                        
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+    <script type="text/javascript" src="js/jquery.eeyellow.Timeline.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.VivaTimeline').vivaTimeline({
+                carousel: true,
+                carouselTime: 3000
+            });
+        });
+    </script>
+</body>
+</html>

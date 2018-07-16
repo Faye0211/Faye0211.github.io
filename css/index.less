@@ -1,0 +1,182 @@
+body {
+    font: 12px/100% "Microsoft Yahei";
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+i,
+em,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+    font-style: normal;
+}
+
+// 右侧的导航按钮
+#menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    list-style: none;
+    li {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(34, 37, 36);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 10px 0; //导航字体
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+    }
+}
+
+// 全部子页面统一顶部标题
+em{
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+//子页面内容-------------------------------
+#dowebok {
+    color: white;
+    font-size: 17px; //第一屏
+    .section1 {
+        text-align: center;
+        background: url('../img/1.jpg');
+        .inner {
+            .up {
+                width: 150px;
+                height: 150px;
+                background: url('../images/me1.JPG') no-repeat;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                background-size: cover;
+                margin: 0 auto;
+                // img {
+                //     border-radius: 50%;
+                //     width: 130px;
+                //     height: 130px;
+                // }
+                h2 {
+                    font-weight: normal;
+                }
+            }
+            .middle {
+                ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                }
+                li {
+                    i {
+                        width: 100px;
+                        height: 100px;
+                        background: rgba(255, 255, 255, .1);
+                        border-radius: 50%;
+                        margin: 20px 50px;
+                        font-size: 40px;
+                        line-height: 100px;
+                    }
+                    span {
+                        display: block;
+                    }
+                }
+            }
+            .bottom {
+                margin-top: 50px;
+            }
+        }
+    } //第二屏
+    .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+    }
+    .section2 {
+        background: url('../img/4.jpg');
+        .inner {
+            display: flex;
+            justify-content: space-around;
+            .itemDot {
+                &:nth-child(3) svg,
+                &:nth-child(4) svg,
+                &:nth-child(8) svg {
+                    font-size: 50px;
+                }
+                svg {
+                    font-size: 40px;
+                }
+            }
+            .content {
+                margin-top: 80px;
+                .title {
+                    margin-top: 10px;
+                    text-align: right;
+                }
+                p{
+                    line-height: 50px;
+                }
+            }
+        }
+    } 
+    .section3{
+        background: url('../img/3.jpg');
+    }
+    .section4{
+        background: url('../img/2.jpg');
+    }
+    //第五屏
+    .section5 {
+        background: url('../img/5.jpg');
+        text-align: center;
+        .find-me {
+            display: flex;
+            justify-content: center;
+            .sticker {
+                width: 80px;
+                height: 80px;
+                margin: 50px;
+            }
+            .sticker-img {
+                background-size: cover;
+            }
+            .example-1 .sticker-img {
+                background-image: url(../images/csdn.jpg);
+            }
+            .example-2 .sticker-img {
+                background-image: url(../images/sina.jpg);
+            }
+            .example-3 .sticker-img {
+                background-image: url(../images/github.jpg);
+            }
+            .example-4 .sticker-img {
+                background-image: url(../images/gmail.jpg);
+            }
+        }
+    }
+}
